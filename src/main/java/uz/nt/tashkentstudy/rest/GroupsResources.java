@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import uz.nt.tashkentstudy.dto.GroupsDto;
 import uz.nt.tashkentstudy.dto.ResponseDto;
-import uz.nt.tashkentstudy.service.GroupsService;
+import uz.nt.tashkentstudy.service.impl.GroupsServiceImpl;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/group")
 @RequiredArgsConstructor
 public class GroupsResources {
-    private final GroupsService groupsService;
+    private final GroupsServiceImpl groupsService;
 
     @GetMapping
     public ResponseDto<List<GroupsDto>> getAllGroups(){
