@@ -17,8 +17,8 @@ import java.util.List;
 public class GroupsDto {
     private Integer id;
     private String name;
-    private Integer teacherId;
-    private Integer subjectId;
+    private TeachersDto teacherId;
+    private SubjectsDto subjectId;
     private String description;
     private List<Users> users;
     private List<DayOfWeek> lessonDays;
