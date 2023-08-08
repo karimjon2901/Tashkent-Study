@@ -17,7 +17,7 @@ public class Groups {
     private Integer id;
     private String name;
     @ManyToOne
-    private Users teacherId;
+    private Teachers teacherId;
     @OneToOne
     private Subjects subjectId;
     private String description;

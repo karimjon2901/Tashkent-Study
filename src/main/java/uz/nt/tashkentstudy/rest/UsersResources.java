@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import uz.nt.tashkentstudy.dto.ResponseDto;
 import uz.nt.tashkentstudy.dto.UsersDto;
-import uz.nt.tashkentstudy.service.UsersService;
+import uz.nt.tashkentstudy.service.impl.UsersServiceImpl;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/user")
 @RequiredArgsConstructor
 public class UsersResources {
-    private final UsersService usersService;
+    private final UsersServiceImpl usersService;
 
     @GetMapping
     public ResponseDto<List<UsersDto>> getAll(){
